@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <h3>Ro'yxatdan o'tish</h3>
+    <div>
+      <form>
+        <div style="margin: 1% auto 0px; width: 40%;    background-color: rgb(222, 225, 225); ">
+      <label for="">Username: </label>
+      <input class="name" type="text" placeholder="Isim kirting" />
+    </div>
+    <div style="margin: 1% auto 0px; width: 40%;    background-color: rgb(222, 225, 225);">
+      <label for="email">Email: </label>
+      <input id="email" type="email" placeholder="email kirting" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <h2 id="result"></h2>
+    </div>
+    <div style="margin: 1% auto 0px; width: 40%;background-color: rgb(222, 225, 225); ">
+      <label for="">Password: </label>
+      <input class="cod" type="password" placeholder="*******"/>
+    </div>
+    </form>
+  </div>
+  <div class="container"> <button style="background:#03843b;color:white;margin: 1% auto 3px; width: 50%">kirish</button></div>
+    <div class="sp"></div>
+    <div class="container1"><button style="background:#d5fc9a"> <a href="http://localhost:3000/login">Menda parol bor</a></button></div>
+    <button href="http://localhost:3000/photo" class="ibk">id bo'cha kirish</button>
+
+    <script>const validateEmail = (email) => {
+      return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+    };
+    
+    const validate = () => {
+      const $result = $('#result');
+      const email = $('#email').val();
+      $result.text('');
+    
+      if (validateEmail(email)) {
+        $result.text(email + "  <- to'gri :)");
+        $result.css("font-size:", "1em");
+        $result.css('color', 'green')
+      } else {
+        $result.text(email + ' <-bu email emas :(');
+        $result.css("font-size", "1em")
+        $result.css('color', 'red');
+      }
+      return false;
+    }
+    
+    $('#email').on('input', validate);</script>
+    </form>
+  </body>
+  <script src="/js/register.js"></script>
+
+</html>

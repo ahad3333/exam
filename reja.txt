@@ -1,0 +1,31 @@
+Photos { Post() Get(). html+js+css+srever.js }
+{
+    "id": 1,
+    "title": "Yangi rasim",
+    "path": "aaaa.jpg"
+}
+videos { Post() Get() html+js+css+srever.js}
+{
+    "id": 1,
+    "title": "Yangi rasim",
+    "path": "aaaa.jpg"
+}
+files { Post() Get()html+js+css+srever.js }
+{
+    "id": 1,
+    "title": "Yangi rasim",
+    "path": "aaaa.jpg"
+}
+register Post html+js+css+srever.js
+ {
+    "id": 1,
+    "name": "ism",
+    "email": "gmail@gmail.com",
+    "password": "parol"
+}
+login Get html+js+css+srever.js
+{
+"login": "name",
+"password": "parol"
+}
+

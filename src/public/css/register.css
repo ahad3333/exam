@@ -1,0 +1,42 @@
+
+  input[type=text] {
+    width: 60%;
+    padding-block: 10px;
+    margin: 8px 15px;
+    box-sizing: border-box;
+  }
+  input[type=email] {
+    width: 61%;
+    padding-block: 10px;
+    margin: 8px 35px;
+    box-sizing: border-box;
+  }
+  input[type=password] {
+    width: 61%;
+    padding-block: 10px;
+    margin: 8px 15px;
+    box-sizing: border-box;
+  }
+  h3{
+    text-align: center;
+    background-color: rgb(222, 225, 225);
+  }
+  .container{  
+    text-align: right;   
+    width: 61%;
+    padding-block: 10px;
+    margin: 8px 70px;
+    box-sizing: border-box;
+    box-shadow: 10cm;
+    } 
+    .container1 {  
+      text-align: center;   
+      width: 10%;
+      padding-block: 1px;
+      margin: 8px 950px;
+      box-sizing: border-box;
+      } 
+  .container1 a:hover {
+   background-color: rgb(8, 8, 8);
+  color: rgb(247, 251, 245);
+  }

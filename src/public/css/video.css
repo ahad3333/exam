@@ -1,0 +1,37 @@
+body
+{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(252, 250, 250);
+}
+h1{
+    color: rgb(61, 39, 39);
+    padding: 14px 16px;
+    text-align: center;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+  }
+.topnav a {
+  float: left;
+  display: block;
+  color: #111111;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 3cm;
+  padding-right: 3cm;
+  background-color:#ccc;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: rgb(95, 93, 93);
+  color: rgb(249, 244, 244);
+}
+  .topnav a {
+    float: left;
+    float: left;
+    width: 17%;
+  } 
